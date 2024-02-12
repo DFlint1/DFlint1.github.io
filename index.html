@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <meta http-equiv="cache-control" content="no-cache"> 
+  <meta http-equiv="expires" content="0"> 
+  <meta http-equiv="pragma" content="no-cache">
 
   <title>Dana Flint | Web Developer | Project Manager and Website Designer located by Lake Travis in Austin, Texas</title>
 
@@ -21,14 +24,7 @@
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="resources/style.css">
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
-  <!-- <script>
-    $("#call").on('click', function() {
-        var link = "tel:5126949113";
-        window.location.href = link;
-    });
-</script> -->
-
+  
 </head>
 
 <body id="page-top">
@@ -189,7 +185,7 @@
                 <p class="mb-0">A fun app to find common interests with friends or just find out what ativities are going on right now near you.</p>
               </span>
             </span>
-            <img class="img-fluid" src="img/findonapp1.jpg" onclick="location.href= 'https://https://findfun.tallyso.com/'" alt="Multimedia Website">
+            <img class="img-fluid" src="img/findonapp1.jpg" onclick="location.href= 'https://findfun.tallyso.com/'" alt="Multimedia Website">
           </a>
         </div>
          <div class="col-lg-6">
@@ -308,9 +304,14 @@
           </a>
         </li>
       </ul>
-      <p class="text-muted small mb-0">Copyright &copy; Dana Flint | DMF Webworks 2020</p>
+      <p class="text-muted small mb-0">Copyright &copy;<span id="curYr"></span> &#32;Dana Flint | DMF Webworks</p>
     </div>
   </footer>
+ <script>
+  var date= new Date();
+  var year = date.getFullYear();
+  document.getElementById('curYr').innerHTML = year;
+</script>
 
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
